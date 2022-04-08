@@ -1,0 +1,40 @@
+programa 
+{
+
+	funcao inicio()
+	{
+		inteiro sim, sim1, sim2, trocas
+        trocas=0
+        enquanto (trocas < 5)
+		{escreva("Ligue a lâmpada.\n")
+		escreva("A lãmpada está queimada? Digite 1 para sim ou 2 para não.\n")
+		leia(sim)
+		se(sim==1)
+		{escreva("Desligue a chave de energia geral da casa.\n")
+		escreva("É necessário uma escada para alcançar a lâmpada? Digite 1 para sim ou 2 para não.\n")
+		leia(sim1)
+		se(sim1==1)
+		{escreva("Busque uma escada.\n")
+        escreva("Posicione a escada embaixo da lâmpada.\n")
+		escreva("Suba a escada.\n")
+		escreva("Retire a lâmpada e coloque.\n")}
+		senao {limpa()
+	    escreva("Retire a lâmpada e coloque\n")}
+	    escreva("Desça a escada e ligue a chave de energia geral da casa.\n")
+		escreva("A lâmpada acendeu? Digite 1 para sim ou 2 para não.\n")
+		leia(sim2)
+		se(sim2==2)
+		{escreva("Desligue a chave de energia geral da casa e busque uma lâmpada nova.\n")
+		escreva("Suba a escada e retire a lâmpada velha.\n")
+		escreva("Coloque a lâmpada nova.\n")
+		escreva("Desça a escada.\n")
+		escreva("Guarde a escada e a lâmpada antiga\n")
+		escreva("Ligue a chave de energia geral da casa.\n")
+		escreva("Ligue a nova lâmpada\n")
+	    (trocas = trocas + 1)}
+        senao{escreva("Não foi necessário trocar a lâmpada\n","Próxima lâmpada\n")}}
+	    senao{escreva("Não foi necessário trocar a lâmpada\n","Próxima lâmpada\n")}
+		
+		}
+	}
+}
